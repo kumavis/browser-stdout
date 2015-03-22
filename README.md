@@ -8,18 +8,19 @@ iono. cuz hakz.
 
 ### hau?
 
-hacksy:
-```js
-process.stdout = require('browser-stdout')()
-
-myStream.pipe(process.stdout)
-```
-
-or less hacksy:
 ```js
 var BrowserStdout = require('browser-stdout')
 
 myStream.pipe(BrowserStdout())
+```
+
+### monkey
+
+You can monkey-patch `process.stdout` for your dependency graph like this:
+
+```
+process.stdout = require('browser-stdout')()
+var coolTool = require('module-that-uses-stdout-somewhere-in-its-depths')
 ```
 
 ### opts
