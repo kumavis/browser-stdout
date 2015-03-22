@@ -15,7 +15,7 @@ function BrowserStdout(opts) {
 }
 
 BrowserStdout.prototype._write = function(chunks, encoding, cb) {
-  var output = chunks.toString ? chunks.toString : chunks
+  var output = chunks.toString ? chunks.toString() : chunks
   console.log(this.label+':', output)
   process.nextTick(cb)
 }
