@@ -23,6 +23,7 @@ myStream.pipe(BrowserStdout())
 ```
 
 ### opts
+
 opts are passed directly to `stream.Writable`.
 additionally, a label arg can be used to label console output.
 
@@ -32,3 +33,7 @@ BrowserStdout({
   label: 'dataz',
 })
 ```
+
+### ur doin it rong
+
+i accept pr's.
