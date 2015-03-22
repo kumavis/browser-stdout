@@ -14,7 +14,7 @@ function BrowserStdout(opts) {
   this.label = (opts.label !== undefined) ? opts.label : 'stdout'
 }
 
-BrowserStdout.prototype._write = function(chunks, cb) {
+BrowserStdout.prototype._write = function(chunks, encoding, cb) {
   var output = chunks.toString ? chunks.toString : chunks
   console.log(this.label+':', output)
   process.nextTick(cb)
