@@ -1,5 +1,7 @@
 ### wat?
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kumavis/browser-stdout.svg)](https://greenkeeper.io/)
+
 `process.stdout` in your browser.
 
 ### wai?
